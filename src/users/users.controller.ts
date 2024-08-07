@@ -5,15 +5,15 @@ import { CreateUserDto } from './dto/create-user.dto';
 
 @Controller('users')
 export class UsersController {
-    constructor(private readonly usersService: UsersService) {}
+  constructor(private readonly usersService: UsersService) {}
 
-    @Get()
-    index():User[] {
-        return this.usersService.findAll();
-    }
-    
-    @Post()
-    create(@Body() userDto: CreateUserDto): void {
-        return this.usersService.create(userDto);
-    }
+  @Get()
+  index(): User[] {
+    return this.usersService.findAll();
+  }
+
+  @Post()
+  create(@Body() userDto: CreateUserDto): void {
+    return this.usersService.create(userDto);
+  }
 }

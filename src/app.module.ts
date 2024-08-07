@@ -10,7 +10,19 @@ import { SavingsAccountController } from './accounts/savingsAccount/savingsAccou
 import { SavingsAccountService } from './accounts/savingsAccount/savingsAccount.service';
 
 @Module({
-  controllers: [UsersController, ManagerController,SavingsAccountController, CheckingAccountController],
-  providers: [UsersService, ManagerService, SequentialIdService, SavingsAccountService, CheckingAccountService, SequentialIdService]
+  controllers: [
+    UsersController,
+    ManagerController,
+    SavingsAccountController,
+    CheckingAccountController,
+  ],
+  providers: [
+    UsersService,
+    ManagerService,
+    SequentialIdService,
+    SavingsAccountService,
+    CheckingAccountService,
+    SequentialIdService,
+  ],
 })
 export class AppModule {}

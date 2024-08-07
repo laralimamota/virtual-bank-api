@@ -1,9 +1,9 @@
-import { User } from "src/users/interfaces/user.interface";
+import { User } from 'src/users/interfaces/user.interface';
 
 export class CreateManagerDto {
-    name: string;
+  name: string;
 
-    constructor(name: string) {
-        this.name = name;
-    }
+  constructor(name: string) {
+    this.name = name;
+  }
 }

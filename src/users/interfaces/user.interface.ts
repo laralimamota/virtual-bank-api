@@ -19,7 +19,7 @@ export class User {
     phone: string,
     income: number,
     manager?: Manager,
-    accounts?: Account[]
+    accounts?: Account[],
   ) {
     this.id = id;
     this.nome = nome;

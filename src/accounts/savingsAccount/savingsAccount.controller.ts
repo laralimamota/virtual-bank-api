@@ -4,15 +4,15 @@ import { SavingsAccountService } from './savingsAccount.service';
 
 @Controller('accounts/checking')
 export class SavingsAccountController {
-    constructor(private readonly savingsAccountService: SavingsAccountService) {}
+  constructor(private readonly savingsAccountService: SavingsAccountService) {}
 
-    @Get()
-    findAll(): SavingsAccount[] {
-        return this.savingsAccountService.findAll();
-    }
+  @Get()
+  findAll(): SavingsAccount[] {
+    return this.savingsAccountService.findAll();
+  }
 
-    @Post()
-    create(@Body() data: Partial<SavingsAccount>) {
-        return this.savingsAccountService.create(data);
-    }
+  @Post()
+  create(@Body() data: Partial<SavingsAccount>) {
+    return this.savingsAccountService.create(data);
+  }
 }
